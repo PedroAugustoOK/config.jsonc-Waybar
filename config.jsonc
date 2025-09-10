@@ -16,7 +16,9 @@
   },
   "on-click": "playerctl --player=spotify play-pause",
   "on-click-right": "playerctl --player=spotify next",
-  "on-click-middle": "playerctl --player=spotify previous"
+  "on-click-middle": "flatpak run com.spotify.Client",
+  "on-scroll-up": "playerctl --player=spotify volume 0.05+",
+  "on-scroll-down": "playerctl --player=spotify volume 0.05-"
 },
 
   "modules-center": ["clock", "custom/update"],
